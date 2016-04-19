@@ -1,0 +1,28 @@
+box: php:5-apache
+build:
+  steps:
+    - install-packages:
+        packages: php-pear
+    - script:
+        name: pear install,
+        code: |
+          pear channel-discover pear.nrk.io
+          pear install nrk/Predis
+    - script:
+        name: move artifacts to /var/www/html
+        code: mv guestbook.php controllers.js index.html /var/www/html
+    - script:
+        name: remove other files to slim down container
+        code: rm -rf $WERCKER_SOURCE_DIR/*
+    - internal/docker-push:
+        username: $DOCKER_USERNAME
+        password: $DOCKER_PASSWORD
+        repository: $DOCKER_REPO/wercker-demo-app
+        tag: $TAG
+        ports: 80
+        cmd: apache2-foreground
+  after-steps:
+    - script:
+        name: pull image on remote Deis PaaS
+        code: |
+          curl -H "Authorization: Token $DEIS_TOKEN" -H "Content-Type: application/json" -X POST http://$DEIS_CONTROLLER/v2/apps/gb/builds -d '{"image": "'"$DOCKER_REPO"'/wercker-demo-app:'"$TAG"'"}'
