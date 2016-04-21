@@ -25,4 +25,4 @@ build:
     - script:
         name: pull image on remote Deis PaaS
         code: |
-          curl -H "Authorization: Token $DEIS_TOKEN" -H "Content-Type: application/json" -X POST http://$DEIS_CONTROLLER/v2/apps/gb/builds -d '{"image": "'"$DOCKER_REPO"'/wercker-demo-app:'"$TAG"'"}'
+          curl -H "Authorization: Token $DEIS_TOKEN" -H "Content-Type: application/json" -X POST http://$DEIS_CONTROLLER/v2/apps/gb/builds -d '{"image": "'"$DOCKER_REPO"'/wercker-demo-app}'
