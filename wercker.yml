@@ -18,7 +18,7 @@ build:
         username: $DOCKER_USERNAME
         password: $DOCKER_PASSWORD
         repository: $DOCKER_REPO/wercker-demo-app
-        tag: $TAG
+        tag: latest
         ports: 80
         cmd: apache2-foreground
   after-steps:
