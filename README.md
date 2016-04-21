@@ -59,7 +59,7 @@ $ deis config:set GET_HOSTS_FROM=env REDIS_MASTER_SERVICE_HOST=redis-master.defa
 $ git clone https://github.com/your_github_account/example-guestbook-wercker.git
 ```
 
-3) Create a new [Wercker App](http://devcenter.wercker.com/docs/web-interface/adding-a-new-application.html) (create a free account on [wercker.com](http://wercker.com/) if do not have it) and connect to your App's Github repo
+3) Create a new [Wercker App](http://devcenter.wercker.com/docs/web-interface/adding-a-new-application.html) and connect to your App's Github repo
 
 4) Under App's [Settings->Environment variables](http://devcenter.wercker.com/docs/environment-variables/creating-env-vars.html) create the values below:
 
