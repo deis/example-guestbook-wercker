@@ -68,7 +68,7 @@ DOCKER_USERNAME: dockerhub or other hosted docker registry account name
 DOCKER_PASSWORD: your docker registry account password
 DOCKER_REPO: your docker repository e.g. your_docker_hub_user_name/wercker-demo-app or quay.io/username/wercker-demo-app
 DEIS_CONTROLLER: Deis PaaS controller URL e.g. http://deis.example.com
-DEIS_TOKEN: your Deis PaaS user token, which you can get from ~/deis/client.json file
+DEIS_TOKEN: your Deis PaaS user token, which you can get from ~/.deis/client.json file
 ```
 The `Environment variables` above will be used by Wercker App you have created reading pipeline steps from the  [wercker.yml](wercker.yml) in your App's repository
 
