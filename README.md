@@ -71,7 +71,7 @@ DEIS_CONTROLLER: Deis PaaS controller URL e.g. http://deis.example.com
 DEIS_TOKEN: your Deis PaaS user token, which you can get from ~/deis/client.json file
 TAG: to be used for tagging your docker image e.g. 0.1
 ```
-The `Environment variables` above will be used by Wercker via [wercker.yml](wercker.yml) in you repository
+The `Environment variables` above will be used by Wercker App you have created reading pipeline steps from the  [wercker.yml](wercker.yml) in your App's repository
 
 
 5) Make changes to your code, push to Github and Wercker will do the following:
