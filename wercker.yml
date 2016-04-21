@@ -18,7 +18,7 @@ build:
         username: $DOCKER_USERNAME
         password: $DOCKER_PASSWORD
         repository: $DOCKER_REPO
-        tag: latest
+        tag: latest # alternatively you can do $WERCKER_GIT_BRANCH or just leave it empty
         ports: 80
         cmd: apache2-foreground
   after-steps:
