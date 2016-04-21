@@ -17,7 +17,7 @@ build:
     - internal/docker-push:
         username: $DOCKER_USERNAME
         password: $DOCKER_PASSWORD
-        repository: $DOCKER_REPO/wercker-demo-app
+        repository: $DOCKER_REPO
         tag: latest
         ports: 80
         cmd: apache2-foreground
@@ -25,4 +25,4 @@ build:
     - script:
         name: pull image on remote Deis PaaS
         code: |
-          curl -H "Authorization: Token $DEIS_TOKEN" -H "Content-Type: application/json" -X POST http://$DEIS_CONTROLLER/v2/apps/gb/builds -d '{"image": "'"$DOCKER_REPO"'/wercker-demo-app}'
+          curl -H "Authorization: Token $DEIS_TOKEN" -H "Content-Type: application/json" -X POST http://$DEIS_CONTROLLER/v2/apps/gb/builds -d '{"image": "'"$DOCKER_REPO"'}'
