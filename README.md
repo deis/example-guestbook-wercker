@@ -69,7 +69,6 @@ DOCKER_PASSWORD: your docker registry account password
 DOCKER_REPO: your docker repository e.g. quay.io/your_user_name
 DEIS_CONTROLLER: Deis PaaS controller URL e.g. http://deis.example.com
 DEIS_TOKEN: your Deis PaaS user token, which you can get from ~/deis/client.json file
-TAG: to be used for tagging your docker image e.g. 0.1
 ```
 The `Environment variables` above will be used by Wercker App you have created reading pipeline steps from the  [wercker.yml](wercker.yml) in your App's repository
 
