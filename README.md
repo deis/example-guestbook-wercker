@@ -1,7 +1,7 @@
 ## Guestbook Example with [Wercker](http://wercker.com) integration
 
 
-This example shows how to build a simple, multi-tier web application using [Helm](https://helm.sh), [Deis Workflow PaaS](https://deis.com/) and [Wercker](http://wercker.com) for CD integration
+This example shows how to build a simple, multi-tier web application using [Helm](https://helm.sh), [Deis Workflow PaaS](https://deis.com/) and [Wercker](http://wercker.com) for Continuous Deployment
 
 The example consists of:
 
