@@ -41,7 +41,7 @@ $ helm install redis-guestbook
 $ deis create guestbook --no-remote
 ```
 
-**Note**: We are creating the App with `--no-remote` as we are going to use prebuilt docker image with Wercker
+**Note**: We are creating the App with `--no-remote`, as later one we are going to use docker image built by Wercker
 
 2) Set `env vars` so the App knows where to connect to redis cluster:
 ```
