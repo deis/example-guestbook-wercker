@@ -19,7 +19,7 @@ This example requires a running [Kubernetes](https://kubernetes.io) cluster and 
 
 
 -
-#### Backend install with the Helm
+#### Backend install with [Helm](https://helm.sh)
 
 1) We add the remote repo to Helm:
 ```
