@@ -85,4 +85,4 @@ The `Environment variables` above will be used by Wercker via [wercker.yml](werc
 
 -
 
-With this example App you have learned how to set multi-tier web application using Helm and Deis Workflow PaaS and using Wercker to deploy it to Deis PaaS
+With this example App you have learned how to set the multi-tier web application using Helm and Deis Workflow and then with Wercker's help to deploy the App to Deis Workflow
