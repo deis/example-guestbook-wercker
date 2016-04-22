@@ -78,7 +78,7 @@ The `Environment variables` above will be used by Wercker App you have created r
 ```
 - build the docker image
 - tag it
-- push to your docker registry
+- push to your docker registry repository
 - pull the new docker image on your remote Deis Workflow PaaS
 ```
 
