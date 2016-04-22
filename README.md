@@ -66,7 +66,7 @@ $ git clone https://github.com/your_github_account/example-guestbook-wercker.git
 ```
 DOCKER_USERNAME: dockerhub or other hosted docker registry account name
 DOCKER_PASSWORD: your docker registry account password
-DOCKER_REPO: your docker repository e.g. your_docker_hub_user_name/wercker-demo-app or quay.io/username/wercker-demo-app
+DOCKER_REPO: your docker repository e.g. your_docker_hub_user_name/wercker-demo-app
 DEIS_CONTROLLER: Deis PaaS controller URL e.g. http://deis.example.com
 DEIS_TOKEN: your Deis PaaS user token, which you can get from ~/.deis/client.json file
 ```
