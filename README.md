@@ -1,7 +1,7 @@
 ## Guestbook Example with [Wercker](http://wercker.com) integration
 
 
-This example shows how to build a simple, multi-tier web application using [Helm](https://helm.sh), [Deis Workflow PaaS](https://deis.com/) and [Wercker](http://wercker.com) for Continuous Deployment
+This example shows how to build a simple, multi-tier web application using [Helm](https://helm.sh), [Deis Workflow](https://deis.com/) and [Wercker](http://wercker.com) for Continuous Deployment
 
 The example consists of:
 
@@ -15,7 +15,7 @@ The web frontend interacts with the Redis `master` API via JavaScript calls.
 
 ### Prerequisites
 
-This example requires a running [Kubernetes](https://kubernetes.io) cluster and you have installed [Helm](https://helm.sh), [Deis Workflow Paas](https://github.com/deis/workflow) and you have an account with [Wercker](http://wercker.com).
+This example requires a running [Kubernetes](https://kubernetes.io) cluster and you have installed [Helm](https://helm.sh), [Deis Workflow](https://github.com/deis/workflow) and you have an account with [Wercker](http://wercker.com).
 
 
 -
@@ -67,8 +67,8 @@ $ git clone https://github.com/your_github_account/example-guestbook-wercker.git
 DOCKER_USERNAME: dockerhub or other hosted docker registry account name
 DOCKER_PASSWORD: your docker registry account password
 DOCKER_REPO: your docker repository e.g. your_docker_hub_user_name/wercker-demo-app
-DEIS_CONTROLLER: Deis PaaS controller URL e.g. http://deis.example.com
-DEIS_TOKEN: your Deis PaaS user token, which you can get from ~/.deis/client.json file
+DEIS_CONTROLLER: Deis Workflow controller URL e.g. http://deis.example.com
+DEIS_TOKEN: your Deis Workflow user token, which you can get from ~/.deis/client.json file
 ```
 The `Environment variables` above will be used by Wercker App you have created reading pipeline steps from the  [wercker.yml](wercker.yml) in your App's repository
 
@@ -79,9 +79,9 @@ The `Environment variables` above will be used by Wercker App you have created r
 - build the docker image
 - tag it
 - push to your docker registry repository
-- pull the new docker image on your remote Deis Workflow PaaS
+- pull the new docker image on your remote Deis Workflow
 ```
 
 -
 
-With this example App you have learned how to set the multi-tier web application up using Helm and Deis Workflow PaaS and then with Wercker's help to deploy your App to Deis Workflow PaaS
+With this example App you have learned how to set the multi-tier web application up using Helm and Deis Workflow and then with Wercker's help to deploy your App to Deis Workflow
