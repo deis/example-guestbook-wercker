@@ -9,7 +9,7 @@ The example consists of:
 - And a back-end [Redis](http://redis.io/) `master` (for storage) with a replicated set of Redis `slaves`
 - Integration with [Wercker](http://wercker.com) for Continuous Deployment of your App's docker image
 
-The web frontend interacts with the Redis `master` API via JavaScript API calls.
+The web frontend interacts with the Redis `master` API via JavaScript calls.
 
 -
 
