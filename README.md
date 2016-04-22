@@ -5,7 +5,7 @@ This example shows how to build a simple, multi-tier web application using [Helm
 
 The example consists of:
 
-- A web frontend which is installed as a Deis Workflow App
+- A web frontend which is installed as a Deis Workflow
 - And a back-end [Redis](http://redis.io/) `master` (for storage) with a replicated set of Redis `slaves`
 - Integration with [Wercker](http://wercker.com) for Continuous Deployment of your App's docker image
 
