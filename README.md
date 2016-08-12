@@ -1,7 +1,7 @@
 ## Guestbook Example with [Wercker](http://wercker.com) integration
 
 
-This example shows how to build a simple, multi-tier web application using [Helm](https://helm.sh), [Deis Workflow](https://deis.com/) and [Wercker](http://wercker.com) for Continuous Deployment
+This example shows how to build a simple, multi-tier web application using [Helm Classic](https://helm.sh), [Deis Workflow](https://deis.com/workflow) and [Wercker](http://wercker.com) for Continuous Deployment
 
 The example consists of:
 
@@ -15,23 +15,23 @@ The web frontend interacts with the Redis `master` API via JavaScript calls.
 
 ### Prerequisites
 
-This example requires a running [Kubernetes](https://kubernetes.io) cluster and you have installed [Helm](https://helm.sh), [Deis Workflow](https://github.com/deis/workflow) and you have an account with [Wercker](http://wercker.com).
+This example requires a running [Kubernetes](https://kubernetes.io) cluster and you have installed [Helm Classic](https://helm.sh), [Deis Workflow](https://github.com/deis/workflow) and you have an account with [Wercker](http://wercker.com).
 
 
 -
-#### Backend install with [Helm](https://helm.sh)
+#### Backend install with [Helm Classic](https://helm.sh)
 
-1) We add the remote repo to Helm:
+1) We add the remote repo to Helm Classic:
 ```
-$ helm up
-$ helm repo add demo-charts https://github.com/deis/demo-charts
-$ helm up
+$ helmc up
+$ helmc repo add demo-charts https://github.com/deis/demo-charts
+$ helmc up
 ```
 
 2) We install our back-end chart
 ```
-$ helm fetch demo-charts/redis-guestbook
-$ helm install redis-guestbook
+$ helmc fetch demo-charts/redis-guestbook
+$ helmc install redis-guestbook
 ```
 
 #### Front-end install with deis cli
@@ -84,4 +84,4 @@ The `Environment variables` above will be used by Wercker App you have created r
 
 -
 
-With this example App you have learned how to set the multi-tier web application up using Helm and Deis Workflow and then with Wercker's help to deploy your App to Deis Workflow
+With this example App you have learned how to set the multi-tier web application up using Helm Classic and Deis Workflow and then with Wercker's help to deploy your App to Deis Workflow
